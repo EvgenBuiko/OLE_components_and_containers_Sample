@@ -1,0 +1,27 @@
+REGEDIT
+; This .REG file may be used by your SETUP program.
+;   If a SETUP program is not available, the entries below will be
+;   registered in your InitInstance automatically with a call to
+;   CWinApp::RegisterShellFileTypes and COleObjectFactory::UpdateRegistryAll.
+
+
+HKEY_CLASSES_ROOT\MFCMiniServerA.Document = MFC_MiniServerA.Document
+
+
+HKEY_CLASSES_ROOT\MFCMiniServerA.Document\protocol\StdFileEditing\server = MFC_MiniServerA.EXE
+HKEY_CLASSES_ROOT\MFCMiniServerA.Document\protocol\StdFileEditing\verb\0 = &Edit
+HKEY_CLASSES_ROOT\MFCMiniServerA.Document\Insertable =
+HKEY_CLASSES_ROOT\MFCMiniServerA.Document\CLSID = {8baaf7c6-0473-4d17-9161-821f10021cfe}
+
+HKEY_CLASSES_ROOT\CLSID\{8baaf7c6-0473-4d17-9161-821f10021cfe} = MFC_MiniServerA.Document
+HKEY_CLASSES_ROOT\CLSID\{8baaf7c6-0473-4d17-9161-821f10021cfe}\DefaultIcon = MFC_MiniServerA.EXE,1
+HKEY_CLASSES_ROOT\CLSID\{8baaf7c6-0473-4d17-9161-821f10021cfe}\LocalServer32 = MFC_MiniServerA.EXE
+HKEY_CLASSES_ROOT\CLSID\{8baaf7c6-0473-4d17-9161-821f10021cfe}\ProgId = MFCMiniServerA.Document
+HKEY_CLASSES_ROOT\CLSID\{8baaf7c6-0473-4d17-9161-821f10021cfe}\MiscStatus = 32
+HKEY_CLASSES_ROOT\CLSID\{8baaf7c6-0473-4d17-9161-821f10021cfe}\AuxUserType\3 = MFC_MiniServerA
+HKEY_CLASSES_ROOT\CLSID\{8baaf7c6-0473-4d17-9161-821f10021cfe}\AuxUserType\2 = MFC_MiniServerA
+HKEY_CLASSES_ROOT\CLSID\{8baaf7c6-0473-4d17-9161-821f10021cfe}\Insertable =
+HKEY_CLASSES_ROOT\CLSID\{8baaf7c6-0473-4d17-9161-821f10021cfe}\verb\1 = &Open,0,2
+HKEY_CLASSES_ROOT\CLSID\{8baaf7c6-0473-4d17-9161-821f10021cfe}\verb\0 = &Edit,0,2
+HKEY_CLASSES_ROOT\CLSID\{8baaf7c6-0473-4d17-9161-821f10021cfe}\InprocHandler32 = ole32.dll
+
