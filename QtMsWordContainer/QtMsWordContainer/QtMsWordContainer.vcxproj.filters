@@ -56,6 +56,9 @@
     <ClCompile Include="ItemsDataManager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="MsWordWrapper.cpp">
+      <Filter>Source Files\View</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MainReport.h">
@@ -63,6 +66,9 @@
     </ClInclude>
     <ClInclude Include="ItemsDataManager.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MsWordWrapper.h">
+      <Filter>Source Files\View</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -4,10 +4,6 @@
 ItemsModel::ItemsModel(QObject* parent /*= 0*/)
 	: QAbstractListModel(parent)
 {
-	ItemsDataManager dataMng;
-	dataMng.LoadData();
-	for (long i = 0; i < dataMng.DataCount(); i++)
-		stringList.append(QString::fromStdString(dataMng.GetFilenameByIndex(i)));
 }
 
 int ItemsModel::rowCount(const QModelIndex& parent /*= QModelIndex()*/) const
@@ -35,5 +31,10 @@ QVariant ItemsModel::headerData(int section, Qt::Orientation orientation, int ro
 		return QString("Column %1").arg(section);
 	else
 		return QString("Row %1").arg(section);
+}
+
+void ItemsModel::addToList( QString str )
+{
+  stringList.append( str );
 }
 

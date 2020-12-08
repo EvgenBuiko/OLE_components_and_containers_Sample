@@ -8,7 +8,7 @@ ItemsDataManager::ItemsDataManager()
 
 void ItemsDataManager::LoadData()
 {
-	QDir directory( QDir::currentPath() );
+  QDir directory( QString( "D:\\test\\OLE_components_and_containers_Sample\\QtMsWordContainer\\Docs" ) );
 	QFileInfoList filesList = directory.entryInfoList( QDir::Files );
 
 	for (const QFileInfo& file : filesList)

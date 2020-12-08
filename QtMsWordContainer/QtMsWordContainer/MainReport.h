@@ -4,6 +4,8 @@ class MainReport
 public:
 	MainReport();
 
+  void InitializeData();
+
 	void show();
 private:
 	class Private;
