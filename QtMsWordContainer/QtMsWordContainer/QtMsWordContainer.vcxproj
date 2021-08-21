@@ -47,9 +47,9 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="QtSettings">
-    <QtInstall>msvc2017_64</QtInstall>
     <QtModules>core;gui;widgets</QtModules>
     <QtBuildConfig>debug</QtBuildConfig>
+    <QtInstall>5.15.2_msvc2019_64</QtInstall>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="QtSettings">
     <QtInstall>msvc2017_64</QtInstall>
@@ -86,6 +86,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="MsWordEditor.cpp" />
     <QtRcc Include="MainWidget.qrc" />
     <QtUic Include="MainWidget.ui" />
     <QtMoc Include="MainWidget.h" />
@@ -97,6 +98,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ItemsDataManager.h" />
+    <ClInclude Include="MsWordEditor.h" />
     <QtMoc Include="ItemsModel.h" />
     <ClInclude Include="MainReport.h" />
   </ItemGroup>

@@ -8,9 +8,11 @@ public:
 	void InitView()
 	{
 		MainWindow.GetDocsListView()->setModel( dynamic_cast<QAbstractItemModel*>( &Model ) );
+		//QObject::connect( MainWindow.GetDocsListView(), QAbstractItemView::clicked,)
 	}
 	MainWidget MainWindow;
 	ItemsModel Model;
+	
 };
 
 MainReport::MainReport()
