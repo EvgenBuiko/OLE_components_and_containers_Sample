@@ -9,7 +9,7 @@ class MainWidget : public QMainWindow
 
 public:
     MainWidget(QWidget *parent = Q_NULLPTR);
-    void setupWindow();
+
     QListView* GetDocsListView() { return ui.docsListView; }
     QVBoxLayout* GetDocEditorLayout() { return dynamic_cast<QVBoxLayout*>( ui.docsEditorLayout ); }
     
